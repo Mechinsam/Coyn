@@ -1,3 +1,34 @@
-[gd_scene format=3 uid="uid://dy8xngo55ujv1"]
+[gd_scene load_steps=4 format=3 uid="uid://dy8xngo55ujv1"]
+
+[ext_resource type="FontFile" uid="uid://dybv5j2hrt51x" path="res://Quicksand-VariableFont_wght.ttf" id="1_v64ch"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_613kt"]
+font = ExtResource("1_v64ch")
+font_size = 56
+
+[sub_resource type="LabelSettings" id="LabelSettings_808oa"]
+font = ExtResource("1_v64ch")
+font_size = 25
 
 [node name="UI" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.487
+anchor_right = 0.487
+offset_left = -273.181
+offset_top = 28.0
+offset_right = 288.819
+offset_bottom = 98.0
+text = "Coyn"
+label_settings = SubResource("LabelSettings_613kt")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 7.0
+offset_top = 677.0
+offset_right = 559.0
+offset_bottom = 709.0
+text = "Tap to toss"
+label_settings = SubResource("LabelSettings_808oa")
+horizontal_alignment = 1
